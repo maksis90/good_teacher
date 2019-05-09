@@ -1,0 +1,42 @@
+.error {
+    font-family: $font;
+    color: $light;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/404/404_bg.png') no-repeat center center;
+    background-size: cover;
+
+    &__text {
+        background: url('../images/404/corgibutwhy.png') no-repeat top center;
+        background-size: contain;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 12rem;
+        font-weight: 700;
+    }
+
+    &__desc {
+        margin-top: 50px;
+        text-align: center;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: $width-md) {
+    .error__text{
+        height: 30%; 
+    }
+    .error__desc {}
+}
+
+@media (max-width: $width-sm) {
+    .error__text{
+        height: 30%; 
+    }
+    .error__desc {
+        margin-top: 0;
+    }
+}
