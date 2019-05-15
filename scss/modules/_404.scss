@@ -1,10 +1,9 @@
 .error {
     font-family: $font;
     color: $light;
-    width: 100vw;
+    min-width: 100vw;
     height: 100vh;
-    background: url('../images/404/404_bg.png') no-repeat center center;
-    background-size: cover;
+    background: radial-gradient(50% 50%, #5f7387, #253f5b);
 
     &__text {
         background: url('../images/404/corgibutwhy.png') no-repeat top center;
@@ -13,7 +12,7 @@
 
     &__title {
         text-align: center;
-        font-size: 12rem;
+        font-size: 16rem;
         font-weight: 700;
     }
 
@@ -21,15 +20,31 @@
         margin-top: 50px;
         text-align: center;
         padding: 0;
+        
+        .animated__wrapper {
+            fill: none;
+            stroke: #f9f9f9;
+            vector-effect: non-scaling-stroke;
+            stroke-dasharray: 30px, 10px;
+            animation: stroke 0.8s linear infinite;
+            shape-rendering: geometricPrecision;
+            stroke-dashoffset: 0;
+            stroke-width: 5px;
+        }
     }
 
+}
+
+@keyframes stroke {
+    to {
+        stroke-dashoffset: 80px;
+    }
 }
 
 @media (max-width: $width-md) {
     .error__text{
         height: 30%; 
     }
-    .error__desc {}
 }
 
 @media (max-width: $width-sm) {
