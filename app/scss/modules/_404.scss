@@ -3,7 +3,12 @@
     color: $light;
     min-width: 100vw;
     height: 100vh;
-    background: radial-gradient(50% 50%, #5f7387, #253f5b);
+    background: #5f7387;
+    background: -moz-radial-gradient(center, ellipse cover,  #5f7387 0%, #253f5b 98%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #5f7387 0%,#253f5b 98%);
+    background: radial-gradient(ellipse at center,  #5f7387 0%,#253f5b 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f7387', endColorstr='#253f5b',GradientType=1 );
+
 
     &__text {
         background: url('../images/404/corgibutwhy.png') no-repeat top center;
@@ -20,7 +25,7 @@
         margin-top: 50px;
         text-align: center;
         padding: 0;
-        
+
         .animated__wrapper {
             fill: none;
             stroke: #f9f9f9;
@@ -43,13 +48,13 @@
 
 @media (max-width: $width-md) {
     .error__text{
-        height: 30%; 
+        height: 30%;
     }
 }
 
 @media (max-width: $width-sm) {
     .error__text{
-        height: 30%; 
+        height: 30%;
     }
     .error__desc {
         margin-top: 0;
