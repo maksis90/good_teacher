@@ -1,0 +1,53 @@
+.price {
+    padding: 0 0 5em 0;
+    &__item {
+        margin: 0 0 0 3rem;
+        background: linear-gradient(192.06deg, #1D354E 34.22%, #294563 90.13%);
+        box-shadow: 0px 4px 10px #10243C;
+        position: relative;
+        
+        &:hover .price__hover{
+            opacity: 1;
+        }
+    }
+
+    &__hover {
+        z-index: 1;
+        @include pos($t:0, $l:-3rem)
+        @include size(5rem, 100%);
+        background: linear-gradient(180deg, #E5E5E5 -100%, #FD6F6B 65.75%);
+        transition: all .5s;
+        opacity: 0;
+        
+        
+
+        &-text {
+            //@include size(100%, 50%);
+            font-size: 2rem;
+            font-weight: 700;
+            transform: rotate(-90deg) translateX(-150%);
+        }
+    }
+
+    &__card { 
+        z-index: 2;
+        padding: 2rem 2rem 2rem 4rem;
+        margin: 1rem;
+    }
+
+    &__headline {
+        font-size: 2rem;
+    }
+
+    .list {
+        margin-top: 1.7em;
+        list-style: disc;
+
+
+        &__item {
+            padding: 0 0 0 -1rem;
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+        }
+    }
+}
