@@ -1,0 +1,25 @@
+.info {
+    &__item {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        margin: 5em 2em;
+
+    }
+
+    &__imgwrap {
+        width: 35%
+    }
+
+    &__img {
+        @include size(8em);
+    }
+
+    &__text {padding: 1em;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}

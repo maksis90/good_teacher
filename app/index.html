@@ -2,29 +2,134 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Starter">
-	<meta name="author" content="Admin">
-	<title>Starter</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Starter">
+    <meta name="author" content="Admin">
+    <title>Profile</title>
 
-	<link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png">
 
-	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
-	<link rel="stylesheet" href="css/global.min.css">
-	<!--endbuild-->
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.min.css">
+    <!--endbuild-->
 
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
+
 <body>
+    <header class="header header__main">
+        <div class="cont">
+            <div class="text">
+                <div class="top__row">
+                    <p class="text__head"><span class="bold">Good teacher</span><br>Выйди за рамки</p>
+                    <div class="logo"><img src="images/header/logo.svg" alt="Good Teacher Logo" class="logo__img"></div>
+                </div>
+
+                <p class="text__main">При ежедневном выполнении плана по изучению языка на протяжении недели, мы обещаем тебе приятный бонус - один день Премиум подписки бесплатно и возможность воспользоваться всеми преимуществами нашего сервиса!</p>
+                <p class="text__footer bold">Good teacher - ты никогда не<br> заснешь на уроке!</p>
+            </div>
+        </div>
+    </header>
+    <section class="registration">
+        <div class="cont">
+            <form class="registration__form">
+                <div class="h2 headline">Регистрация</div>
+                <input class="registration__input" type="text" placeholder="Логин">
+                <input class="registration__input" type="password" placeholder="Пароль">
+                <div class="link btn">
+                    <a href="#" class="btn__text">Создать аккаунт</a>
+                </div>
+                <div class="link btn">
+                    <a href="#" class="btn__text">Продолжить с Facebook</a>
+                </div>
+                <a href="#" class="alt__link">У меня уже есть аккаунт</a>
+            </form>
+        </div>
+    </section>
+    <section class="info">
+        <div class="cont">
+            <div class="info__item">
+                <div class="info__imgwrap"><img src="images/price/rocket.svg" alt="rocket" class="info__img"></div>
+                <p class="info__text">Учи язык быстро, эффективно
+                    и интересно. С <span class="red">Good teacher</span>
+                    это возможно.</p>
+            </div>
+            <div class="info__item">
+                <div class="info__imgwrap"><img src="images/price/bullseye.svg" alt="bullseye" class="info__img"></div>
+                <p class="info__text">Учи язык быстро, эффективно
+                    и интересно. С <span class="red">Good teacher</span>
+                    это возможно.</p>
+            </div>
+            <div class="info__item">
+                <div class="info__imgwrap"><img src="images/price/book.svg" alt="book" class="info__img"></div>
+                <p class="info__text">Учи язык быстро, эффективно
+                    и интересно. С <span class="red">Good teacher</span>
+                    это возможно.</p>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <div class="cont">
+            <div class="h2">Ускорь изучение с премиум подпиской</div>
+            <div class="price__item">
+                <div class="price__hover">
+                    <p class="price__hover-text">Купить</p>
+                </div>
+                <div class="price__card">
+                    <h3 class="price__headline  bold">12 месяцев</h3>
+                    <ul class="list">
+                        <li class="list__item">Безлимитное добавление слов в словарь</li>
+                        <li class="list__item">Изучение всех правил грамматики</li>
+                        <li class="list__item">Доступ ко всем тренировкам</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price__item">
+                <div class="price__hover">
+                    <p class="price__hover-text">Купить</p>
+                </div>
+                <div class="price__card">
+                    <h3 class="price__headline  bold">3 месяца</h3>
+                    <ul class="list">
+                        <li class="list__item">Безлимитное добавление слов в словарь</li>
+                        <li class="list__item">Изучение всех правил грамматики</li>
+                        <li class="list__item">Доступ ко всем тренировкам</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="price__item">
+                <div class="price__hover">
+                    <p class="price__hover-text">Купить</p>
+                </div>
+                <div class="price__card">
+                    <h3 class="price__headline  bold">Базовый статус
+                        Бесплатно</h3>
+                    <ul class="list">
+                        <li class="list__item">250 000+ текстов, видео и аудио для обучения</li>
+                        <li class="list__item">Наборы популярных слов по сотням тематик</li>
+                        <li class="list__item">Базовые тренировки слов</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="cont"></div>
+    </footer>
 
 
-	<!--build:js js/main.min.js -->
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.bundle.min.js"></script>
-	<script src="js/main.js"></script>
-	<!--endbuild-->
+
+
+    <!--build:js js/main.min.js -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--endbuild-->
 </body>
+
 </html>

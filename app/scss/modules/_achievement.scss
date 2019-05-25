@@ -1,0 +1,168 @@
+.achiev {
+
+    //second page
+    .headline {
+        padding: 2rem 4rem;
+    }
+
+    .success-graph {
+        height: 8rem;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        background: url('../images/rising-bar-graph-with-arrow-up.svg') no-repeat center right;
+        background-size: contain;
+        margin: 0 4%;
+
+        .progress {
+            height: 6rem;
+            width: 70%;
+            border-radius: 3rem 3rem 3rem 3rem;
+            background: #fff;
+
+
+            .progress__percent {
+                font-size: 2rem;
+                line-height: 6rem;
+                text-align: center;
+                background: #5FCFA9;
+                width: 35%;
+            }
+        }
+    }
+
+    .btn {
+        margin: 2em 25%;
+    }
+
+    .yt__wrapper {
+        width: 50%;
+        margin: 0 25%;
+        height: 16em;
+        border-radius: 2em 2em 2em 2em;
+        background: #fff;
+    }
+}
+
+.h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.difficulty {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 15% 0;
+    font-size: 2rem;
+
+    &__item {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+        height: 3rem;
+        margin: 1rem 0;
+    }
+
+    &__text {
+        padding-left: 2rem;
+        font-size: 2rem;
+    }
+
+    &__input {
+        margin-left: 2rem;
+    }
+}
+
+.friends {
+    padding-bottom: 20em;
+
+    .slider__wrapper {
+        width: 100%;
+
+    }
+
+    .slider {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+
+        &__item {
+            @include size(10em);
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+
+    .addfriend {
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: right;
+        color: #FE7975;
+    }
+}
+
+.graph {
+    height: 30em;
+    background: url('../images/graph.svg') no-repeat center bottom;
+    background-size: 102%;
+    padding: 0 1rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 20em;
+
+    &__username {
+        margin: 0 0 0 1.25rem;
+        font-size: 2rem; 
+    }
+}
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10em;
+    line-height: 10rem;
+    background: $blue;
+
+    .cont {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 3rem;
+    }
+
+    .icon {
+        font-size: 8rem;
+    }
+}

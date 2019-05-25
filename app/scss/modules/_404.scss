@@ -3,14 +3,16 @@
     color: $light;
     min-width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
     background: #5f7387;
-    background: -moz-radial-gradient(center, ellipse cover,  #5f7387 0%, #253f5b 98%);
-    background: -webkit-radial-gradient(center, ellipse cover,  #5f7387 0%,#253f5b 98%);
-    background: radial-gradient(ellipse at center,  #5f7387 0%,#253f5b 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f7387', endColorstr='#253f5b',GradientType=1 );
+    background: -moz-radial-gradient(center, ellipse cover, #5f7387 0%, #253f5b 98%);
+    background: -webkit-radial-gradient(center, ellipse cover, #5f7387 0%, #253f5b 98%);
+    background: radial-gradient(ellipse at center, #5f7387 0%, #253f5b 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f7387', endColorstr='#253f5b', GradientType=1);
 
 
-    &__text {
+    &__img {
         background: url('../images/404/corgibutwhy.png') no-repeat top center;
         background-size: contain;
     }
@@ -24,7 +26,7 @@
     &__desc {
         margin-top: 50px;
         text-align: center;
-        padding: 0;
+        height: 20%;
 
         .animated__wrapper {
             fill: none;
@@ -46,17 +48,57 @@
     }
 }
 
-@media (max-width: $width-md) {
-    .error__text{
-        height: 30%;
+@media (max-device-width : 375px) {
+    .error__img {
+        background: url('../images/404/corgibutwhy.png') no-repeat top center;
+        background-size: contain;
     }
 }
 
-@media (max-width: $width-sm) {
-    .error__text{
-        height: 30%;
-    }
-    .error__desc {
-        margin-top: 0;
+@media (min-device-width : 375px) {
+
+    .error__title {
+        height: 35%;
     }
 }
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape) {
+    .error__img {
+        max-width: 30%;
+        height: 30%;
+        margin-left: 35%;
+    }
+
+    .error__desc {
+        margin-top: 0;
+        height: 35%;
+    }
+
+    .error__title {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
+    .error__img {
+        max-width: 30%;
+        height: 30%;
+        margin-left: 35%;
+    }
+
+    .error__desc {
+        margin: 0 38%;
+        height: 35%;
+        //boom
+    }
+
+    .error__title {
+        font-size: 14rem;
+    }
+}
+
+//@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) and (orientation : portrait) {
+//    .error__desc {
+//        margin: 0 38%;
+//    }
+//}
