@@ -40,7 +40,8 @@ var paths = {
 
 var sources = {
 	css: [
-		'./node_modules/bootstrap/dist/css/bootstrap.min.css'
+		'./node_modules/bootstrap/dist/css/bootstrap.min.css',
+        './node_modules/slick-carousel/slick/slick.css'
 	],
 	js: [
 		'./node_modules/jquery/dist/jquery.min.js',
