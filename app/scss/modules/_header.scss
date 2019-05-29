@@ -1,87 +1,4 @@
-
 .header {
-   // height: 100vh;
-
-    &__desktop{
-        font-size: 2.25rem;
-        line-height: 3rem;
-        font-weight: 400;
-    }
-
-    &__title {
-        color: $red;
-    }
-
-    .top__link,
-    .bootom__link{
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .link__reg {
-        color: $blue;
-    }
-
-    .bootom__link {
-        color: #fff;
-        padding: 1rem 7rem;
-        font-weight: 700;
-        background: #f78985;
-        background: -moz-linear-gradient(left, #f78985 0%, #fd6f6b 100%);
-        background: -webkit-linear-gradient(left, #f78985 0%,#fd6f6b 100%);
-        background: linear-gradient(to right, #f78985 0%,#fd6f6b 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f78985', endColorstr='#fd6f6b',GradientType=1 );
-    }
-
-
-
-    .text {
-        text-align: center;
-
-
-        &__main{
-        font-size: 1rem;
-        line-height: 1.5rem;
-        width: 58%;
-        text-align: left;
-
-        }
-
-    }
-
-    .logo {
-        display: none;
-    }
-    
-    &__mobile {
-        display: none;
-    }
-
-    .top__row {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 1rem;
-    }
-
-    .img__corgi {
-        margin: -3.5rem 0 2rem -10rem;
-    }
-
-    .bottom__row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 2rem;
-    }
-
-
-    @media (max-width: $width-lg) {
-
     margin-top: 2vh;
     background: $blue;
     color: $dark;
@@ -94,19 +11,19 @@
         background: url('../images/header/main-header-bg-line.svg') no-repeat center bottom;
         background-size: contain;
     }
-
-    &__desktop{
-        display: none;
-    }
-
-        &__mobile {
-            display: block;
-        }
     
-
+    &__main{
+        
+    }
     
     .top__row{
-
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         
         .text__head{
             
@@ -116,39 +33,18 @@
                 font-size: 3.25rem;
             }
         }
-
-        .logo {
-            display: inline-block;
-
-        &__desk {
-            display: none;
-        }
         
-        &__img{
-            background: url("");
+        .logo__img{
             @include size(10em);
-        }
         }
     }
     .text{
-
-        text-align: left;
-
-        .img__corgi,
-        .top__link {
-            display: none;
-        }
         
         &__footer{
             padding-bottom: 8em;
         }
     }
-    .bootom__link {
-        display: none;
-    }
 }
-}
-
 
 
 

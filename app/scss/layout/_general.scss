@@ -70,11 +70,3 @@ body {
     @include size(100px, 100%);
     background: #182635;
 }
-
-.wrapper{
-    background: #5f7387;
-    background: -moz-radial-gradient(center, ellipse cover, #5f7387 0%, #253f5b 98%);
-    background: -webkit-radial-gradient(center, ellipse cover, #5f7387 0%, #253f5b 98%);
-    background: radial-gradient(ellipse at center, #5f7387 0%, #253f5b 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f7387', endColorstr='#253f5b', GradientType=1);
-}
