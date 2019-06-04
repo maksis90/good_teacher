@@ -2,11 +2,9 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_reset";
-
 // Layout
 @import "layout/_general";
 @import "layout/_fonts";
-
 // Page styles
 //index
 @import "modules/_header";
@@ -17,5 +15,7 @@
 @import "modules/_profile";
 @import "modules/_achievement.scss";
 @import "modules/_friends";
+//
+@import "modules/_profile__header";
 //404
 @import "modules/_404";

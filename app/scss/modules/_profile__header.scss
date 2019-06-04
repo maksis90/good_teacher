@@ -1,0 +1,70 @@
+.teaching__header {
+    background: $blue;
+    overflow: hidden;
+}
+
+.logo__wraper {
+    display: flex;
+    justify-content: center;
+    .logo__img {
+        @include size(6rem);
+    }
+}
+
+.profile__header {
+    padding: 2rem 0;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        @include pos($t: 0, $l: 0);
+        @include size(100%, 100%);
+        background: url('../images/header/bg_header_desctop.svg') no-repeat bottom right;
+        background-size: contain;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        @include pos($t: 9px, $l: 0);
+        @include size(100%,
+        100%);
+        background: url('../images/header/bg_header_desctop_line+pencil.svg') no-repeat bottom right;
+        background-size: 50%;
+    }
+    .text {
+        color: $dark;
+        &__head {
+            padding: 0 0 1rem 0;
+        }
+        &__main {
+            padding: 0 0 1rem 0;
+        }
+    }
+    .profile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0 2rem 0 4rem;
+        &__status {
+            .icon-crown {
+                font-size: 1.2rem;
+                padding: 0 0 .25rem 0;
+            }
+            font-size: .6rem;
+            font-weight: 700;
+            color: $dark;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__param {
+            font-size: 1.5rem;
+        }
+        &__photo {
+            border-radius: 50%;
+            border: 3px solid #FE7975;
+        }
+    }
+}

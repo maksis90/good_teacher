@@ -1,44 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
-
+@include font-face('icomoon',
+'fonts/icomoon/icomoon');
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jocj8w');
-  src:  url('fonts/icomoon.eot?jocj8w#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jocj8w') format('truetype'),
-    url('fonts/icomoon.woff?jocj8w') format('woff'),
-    url('fonts/icomoon.svg?jocj8w#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?jyh940');
+    src: url('fonts/icomoon.eot?jyh940#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?jyh940') format('truetype'), url('fonts/icomoon.woff?jyh940') format('woff'), url('fonts/icomoon.svg?jyh940#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon-check:before {
+    content: "\e905";
+    color: #48cd66;
+}
+
+.icon-crown:before {
+    content: "\e906";
+    color: #fee58c;
+}
+
+.icon-refresh:before {
+    content: "\e907";
+    color: #f9f9f9;
+}
+
+.icon-setings:before {
+    content: "\e908";
+    color: #26405c;
+}
+
+.icon-share:before {
+    content: "\e904";
+    color: #cee0f0;
+}
+
+.icon-speaker:before {
+    content: "\e909";
+    color: #f9f9f9;
+}
+
+.icon-uncheck:before {
+    content: "\e90a";
+    color: #e05038;
 }
 
 .icon-book:before {
-  content: "\e900";
-  color: #26405c;
+    content: "\e900";
+    color: #26405c;
 }
+
 .icon-career:before {
-  content: "\e901";
-  color: #26405c;
+    content: "\e901";
+    color: #26405c;
 }
+
 .icon-profile:before {
-  content: "\e902";
-  color: #26405c;
+    content: "\e902";
+    color: #26405c;
 }
+
 .icon-start:before {
-  content: "\e903";
-  color: #26405c;
+    content: "\e903";
+    color: #26405c;
 }
