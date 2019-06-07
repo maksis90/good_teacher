@@ -1,5 +1,30 @@
 .registration {
-    padding-top: 2em;
+    order: 2;
+    width: 45%;
+
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding-bottom: 1.125em;
+    }
+
+
+    @media (max-width: $width-lg) {
+        order: 0;
+    }
+
+    &__headline {
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
     &__form {
         padding: 5em 0;
         background: linear-gradient(337.24deg, #223952 0%, #345374 119.14%);
@@ -14,21 +39,20 @@
     }
 
     &__input {
-        width: 50%;
-        height: 5rem;
-        line-height: 4rem;
-        font-size: 1.5rem;
+        width: 60%;
+        height: 3.1rem;
+        font-size: 1rem;
         font-weight: 500;
         color: $light;
         padding-left: 1em;
-        margin: 1rem 25%;
+        margin: 1rem 20%;
         background: transparent;
         border: 1px solid rgba(206,224,240, .5);
     }
     .alt__link{
         color: $light;
         opacity: .8;
-        font-size: 1.5rem;
+        font-size: 0.75rem;
         padding: 1em 25%;
     }
 }
