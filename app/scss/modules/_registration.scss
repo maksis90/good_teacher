@@ -3,6 +3,17 @@
     width: 45%;
 
 
+
+    @media (max-width: $width-lg) {
+        order: 0;
+      width: 100%;
+
+        &__title {
+          display: none;
+        }
+    }
+
+
     .cont {
         display: flex;
         flex-direction: column;
@@ -23,6 +34,7 @@
     &__headline {
         text-align: center;
         padding-bottom: 1.5rem;
+        font-size: 1.2rem;
     }
 
     &__form {
@@ -39,13 +51,13 @@
     }
 
     &__input {
-        width: 60%;
+        width: 57%;
         height: 3.1rem;
         font-size: 1rem;
         font-weight: 500;
         color: $light;
         padding-left: 1em;
-        margin: 1rem 20%;
+        margin: 1rem 21.5%;
         background: transparent;
         border: 1px solid rgba(206,224,240, .5);
     }
@@ -56,3 +68,5 @@
         padding: 1em 25%;
     }
 }
+
+
