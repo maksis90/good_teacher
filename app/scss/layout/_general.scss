@@ -54,21 +54,38 @@ body {
 }
 
 .btn{
-    width: 50%;
-    height: 5rem;
-    line-height:4rem;
-    font-size: 2rem;
+    width: 57%;
+    height: 3rem;
+    line-height:2rem;
+    font-size: 1rem;
     font-weight: 700;
     text-align: center;
-    margin: 1rem 25%;
+    margin: 1rem 21.5%;
+    vertical-align: center;
     background: linear-gradient(180deg, #FBAFAC -100%, #FD6F6B 65.75%);
     &__text{
         color: $light;
     }
 }
+
+
+
+
 .footer{
     @include size(100px, 100%);
     background: #182635;
+}
+
+.title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-bottom: 1.25rem;
+
+}
+
+.section-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .wrapper{

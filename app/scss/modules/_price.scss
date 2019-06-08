@@ -1,5 +1,28 @@
 .price {
+    order: 3;
     padding: 0 0 5em 0;
+    width: 55%;
+
+    &__title {
+      padding: 0 0 2rem 3rem;
+    }
+
+    &__text {
+      padding: 1rem 0 0 3rem;
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+
+
+    @media (max-width: $width-lg) {
+        order: 2;
+        width: 100%;
+
+      &__text {
+        display: none;
+      }
+    }
+
     &__item {
         margin: 0 0 0 3rem;
         background: linear-gradient(192.06deg, #1D354E 34.22%, #294563 90.13%);
@@ -14,7 +37,7 @@
     &__hover {
         z-index: 1;
         @include pos($t:0, $l:-3rem);
-        @include size(5rem, 100%);
+        @include size(3rem, 100%);
         background: linear-gradient(180deg, #E5E5E5 -100%, #FD6F6B 65.75%);
         transition: all .5s;
         opacity: 0;
@@ -22,9 +45,9 @@
         
 
         &-text {
-            //@include size(100%, 50%);
-            font-size: 2rem;
-            font-weight: 700;
+            @include pos($l:-25%, $t:-12.5%);
+            font-size: 1.25rem;
+            font-weight: 600;
             transform: rotate(-90deg) translateX(-150%);
         }
     }
@@ -32,11 +55,11 @@
     &__card { 
         z-index: 2;
         padding: 2rem 2rem 2rem 4rem;
-        margin: 1rem;
+       // margin: 1rem;
     }
 
     &__headline {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .list {
@@ -46,8 +69,8 @@
 
         &__item {
             padding: 0 0 0 -1rem;
-            font-size: 1.7rem;
-            line-height: 2.5rem;
+            font-size: 1rem;
+            line-height: 2rem;
         }
     }
 }

@@ -12,6 +12,10 @@
         color: $red;
     }
 
+    &__img {
+        margin: -2rem 0 2rem -8.5rem;
+    }
+
     .top__link,
     .bootom__link{
         text-decoration: none;
@@ -37,6 +41,7 @@
 
     .text {
         text-align: center;
+        position: relative;
 
 
         &__main{
@@ -69,7 +74,7 @@
     }
 
     .img__corgi {
-        margin: -3.5rem 0 2rem -10rem;
+        @include size(50% 50%);
     }
 
     .bottom__row {
