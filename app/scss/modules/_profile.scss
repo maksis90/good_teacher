@@ -1,87 +1,70 @@
 .header__achiev {
-
-
-
-
-
-    @media (min-width: $width-sm) and (max-width: $width-lg) {
+    background: $blue;
     margin-top: 2vh;
-    //height: 30vh;
     background: $blue;
     color: $dark;
     position: relative;
-
-
-    &:before {
+    &::before {
         content: '';
         position: absolute;
-        @include pos($t:0, $l:0);
+        @include pos($t: 0, $l: 0);
         @include size(100%);
         background: url('../images/header/bg.png') no-repeat bottom right;
         background-size: contain;
     }
-
-    &:after {
+    &::after {
         content: '';
         position: absolute;
-        @include pos($t:0, $l:0);
+        @include pos($t: 0, $l: 0);
         @include size(100%);
         background: url('../images/header/bg-line.svg') no-repeat bottom center;
         background-size: contain;
         opacity: .3;
     }
-}
-
-.nav {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 9em;
-    margin: 1em 0 0 0;
-
-    .logo {
-        @include size(10rem);
-
-        &__img {
-            @include size(100%);
-            object-fit: cover;
+    //@media (min-width: $width-sm) and (max-width: $width-lg) {}
+    .nav {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9rem;
+        margin: 1rem 0 0 0;
+        .logo {
+            @include size(5rem);
+            &__img {
+                @include size(100%);
+                object-fit: cover;
+            }
+        }
+        .profile {
+            @include size(5rem);
+            &__img {
+                border-radius: 50%;
+                @include size(100%);
+                object-fit: cover;
+            }
         }
     }
-
-    .profile {
-        @include size(10rem);
-
-        &__img {
-            border-radius: 50%;
-            @include size(100%);
-            object-fit: cover;
+    .text {
+        position: relative;
+        font-family: $font, sans-serif;
+        color: $dark;
+        &__head {
+            font-size: 1.5rem;
+            padding: 1rem 0;
+        }
+        &__main {
+            font-size: 1rem;
+            // font-size: 1.9rem;
+            margin-bottom: 1rem;
+            width: 80%;
+        }
+        &__footer {
+            font-size: 1rem;
+            margin-bottom: 2rem;
         }
     }
-}
-
-.text {
-    position: relative;
-    font-family: $font, sans-serif;
-
-    &__head {
-        font-size: 2.5rem;
-        padding: 1.5rem 0;
-    }
-
-    &__main {
-        font-size: .75rem;
-       // font-size: 1.9rem;
-        margin-bottom: 1em;
-        width: 70%;
-    }
-
-    &__footer {
-        font-size: 1.9rem;
-        margin-bottom: 1em;
-    }
-}
 }

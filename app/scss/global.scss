@@ -6,16 +6,17 @@
 @import "layout/_general";
 @import "layout/_fonts";
 // Page styles
+//
+@import "modules/_navigationForMobile";
 //index
 @import "modules/_header";
 @import "modules/_registration";
 @import "modules/_info";
-@import "modules/_price.scss";
+@import "modules/_price";
 //profile
 @import "modules/_profile";
-@import "modules/_achievement.scss";
+@import "modules/_achievement";
 @import "modules/_friends";
-//
 @import "modules/_profile__header";
 //404
 @import "modules/_404";

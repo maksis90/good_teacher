@@ -1,0 +1,47 @@
+.friends {
+    padding-bottom: 20em;
+    .slider__wrapper {
+        width: 100%;
+    }
+    .slider {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        &__item {
+            @include size(5rem);
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+    .addfriend {
+        font-size: .8rem;
+        padding: 0 0 0 60%;
+        color: #FE7975;
+    }
+}
+
+.graph {
+    height: 15rem;
+    @media (max-width: $width-lg) {
+        height: 23rem;
+    }
+    background: url('../images/graph.svg') no-repeat center bottom;
+    background-size: contain;
+    padding: 0 1rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 8rem;
+    &__username {
+        margin: 0 0 0 1.05rem;
+        font-size: .8rem;
+    }
+}
