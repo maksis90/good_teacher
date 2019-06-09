@@ -1,0 +1,20 @@
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    background: $blue;
+    .cont {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+}

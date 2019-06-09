@@ -49,38 +49,34 @@ body {
     font-weight: 700;
 }
 
-.red{
+.red {
     color: $red;
 }
 
-.btn{
-    width: 57%;
+.btn {
+    width: 60%;
     height: 3rem;
-    line-height:2rem;
+    line-height: 2rem;
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
     margin: 1rem 21.5%;
     vertical-align: center;
     background: linear-gradient(180deg, #FBAFAC -100%, #FD6F6B 65.75%);
-    &__text{
+    &__text {
         color: $light;
     }
 }
 
-
-
-
-.footer{
+.footer {
     @include size(100px, 100%);
     background: #182635;
 }
 
 .title {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  padding-bottom: 1.25rem;
-
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.25rem;
 }
 
 .section-wrap {
@@ -88,10 +84,10 @@ body {
     flex-wrap: wrap;
 }
 
-.wrapper{
+.wrapper {
     background: #5f7387;
     background: -moz-radial-gradient(center, ellipse cover, #5f7387 0%, #253f5b 98%);
     background: -webkit-radial-gradient(center, ellipse cover, #5f7387 0%, #253f5b 98%);
     background: radial-gradient(ellipse at center, #5f7387 0%, #253f5b 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f7387', endColorstr='#253f5b', GradientType=1);
+    //filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5f7387', endColorstr='#253f5b', GradientType=1);
 }
