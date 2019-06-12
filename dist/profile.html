@@ -13,12 +13,12 @@
 </head>
 
 <body>
-   
+
     <header class="header__achiev">
         <div class="cont">
             <nav class="nav">
                 <div class="logo"><img src="images/header/logo.svg" alt="Good Teacher Logo" class="logo__img"></div>
-                <div class="profile"><img src="images/header/%D1%84%D0%BE%D1%82%D0%BE.jpg" alt="profile" class="profile__img"></div>
+                <div class="profile"><img src="images/header/%D1%84%D0%BE%D1%82%D0%BE.jpg" alt="profile" class="profile__img"><br>Стефания</div>
                 <!-- <div class="menu"></div>-->
             </nav>
             <div class="text">
@@ -37,30 +37,36 @@
                     <p class="progress__percent bold">265 слов</p>
                 </div>
             </div>
-            <form action="" class="difficulty">
+            <form action="" class="difficulty" id="difficulty">
                 <p class="h2">Установи ежедневную цель</p>
 
-                <div class="difficulty__item">
-                    <input type="radio" id="starter" name="select" value="starter">
-                    <label class="difficulty__text" for="starter">буду учить 3 слова в день</label>
-                </div>
-                <div class="difficulty__item">
-                    <input type="radio" id="medium" name="select" value="medium">
-                    <label class="difficulty__text" for="medium">буду учить 5 слов в день</label>
-                </div>
-                <div class="difficulty__item">
-                    <input type="radio" id="hard" name="select" value="hard">
-                    <label class="difficulty__text" for="hard">я крутой, буду учить 10 слов в день</label>
-                </div>
-                <div class="difficulty__item">
-                    <input type="radio" id="hard" name="select" value="hard">
-                    <input class="difficulty__input" type="number" id="hard" name="select" placeholder="">
-                </div>
+                <label class="difficulty__item">
+                    <input type="radio" id="starter" name="select" class="hidden">
+                    <span class="label"></span>
+                    буду учить 3 слова в день
+                </label>
+                <label class="difficulty__item">
+                    <input type="radio" id="medium" name="select" class="hidden">
+                    <span class="label"></span>
+                    буду учить 5 слов в день
+                </label>
+                <label class="difficulty__item">
+                    <input type="radio" id="hard" name="select" class="hidden" checked="checked">
+                    <span class="label"></span>
+                    я крутой, буду учить 10 слов в день
+                </label>
+                <label class="difficulty__item difficulty__item--select">
+                    <input type="radio" id="custom" name="select" class="hidden">
+                    <span class="label"></span>
+                        мой вариант
+                        <input class="difficulty__input" type="number" id="custom_num" name="select" >
+                </label>
+                <button class="link btn form__link" type="submit">
+                    <a href="#" class="btn__text ">Мои слова и фразы</a>
+                </button>
             </form>
 
-            <div class="link btn">
-                <a href="#" class="btn__text">Мои слова и фразы</a>
-            </div>
+
 
             <div class="h3 ">Рекомендация на сегодня</div>
             <div class="yt__wrapper">
@@ -76,13 +82,14 @@
         <div class="cont">
             <div class="h2 bold headline">Мои друзья</div>
             <div class="slider__wrapper">
-                <div class="slider">
-                    <div class="slider__item"></div>
-                    <div class="slider__item"></div>
-                    <div class="slider__item"></div>
-                    <div class="slider__item"></div>
+                <div class="friend__slider">
+                    <div class="slider__item"><img src="images/friends__profiles/Mask Group-1.png" alt="Prifile Photo" class="img"></div>
+                    <div class="slider__item"><img src="images/friends__profiles/Mask Group-2.png" alt="Prifile Photo" class="img"></div>
+                    <div class="slider__item"><img src="images/friends__profiles/Mask Group-3.png" alt="Prifile Photo" class="img"></div>
+                    <div class="slider__item"><img src="images/friends__profiles/Mask Group-4.png" alt="Prifile Photo" class="img"></div>
+                    <div class="slider__item"><img src="images/friends__profiles/Mask Group-5.png" alt="Prifile Photo" class="img"></div>
                 </div>
-                <a href="" class="link addfriend">Добавить друзей</a>
+                <a href="#" class="link addfriend">Добавить друзей</a>
             </div>
             <div class="h2">Успехи друзей</div>
             <div class="graph">
@@ -103,7 +110,7 @@
             </div>
         </secton>
     </secton>
-
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
