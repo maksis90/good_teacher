@@ -101,6 +101,12 @@
         margin: 0 0 1rem 2rem;
         cursor: pointer;
         width: 50%;
+        &:hover {
+            text-decoration: none;
+        }
+        &:focus {
+            text-decoration: none;
+        }
         [class^="icon-"] {
             font-size: 1.75rem;
         }
@@ -115,4 +121,8 @@
         text-align: center;
         margin-right: 1rem;
     }
+}
+
+.container {
+    font-family: $font;
 }
