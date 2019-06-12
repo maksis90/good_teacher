@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta content="Start Template" name="description">
     <meta content="Admin" name="author">
-    <title>404 Error</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Lesson</title>
     <link href="images/favicon.png" rel="icon">
 
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-    <section class="teaching__header">
+    <header class="teaching__header">
         <div class="container">
             <div class="profile__header row">
                 <div class="logo__wraper col-3"><img src="images/header/logo.svg" alt="logo" class="logo__img"></div>
@@ -24,69 +25,89 @@
                 <div class="profile col-3">
                     <div class="profile__status"><i class="icon-crown"></i>Premiun
                     </div>
-                    <div class="profile__param"><i class="icon-setings"></i></div>
+                    <div class="profile__param btn-group dropleft">
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-setings"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-menu__link">Язык интерфейса</a>
+                            <a href="#" class="dropdown-menu__link">Оформить подписку</a>
+                            <a href="#" class="dropdown-menu__link">Редактировать профиль</a>
+                            <a href="#" class="dropdown-menu__link">Выйти</a>
+                        </div>
+                    </div>
                     <img class="profile__photo" src="images/header/фото.jpg" alt="Profile photo">
                 </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="teaching offset-1 col-10">
-            <div class="h2 headline">Слово-перевод</div>
-            <div class="wrapper">
-                <div class="row">
-                    <div class="col-6 word">
-                        <p class="word__title">improve <i class="icon-speaker"></i> </p>
-                        <p class="word__transcription">|ɪmˈpruːv| </p>
-                        <p class="word__translate">улучшать<br>совершенствовать</p>
+    </header>
+    <section class="teaching__main">
+        <div class="container">
+            <div class="teaching offset-1 col-10">
+                <div class="h2 headline">Слово-перевод</div>
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-6 word">
+                            <div class="word__wrapper col-6 offset-6">
+                                <p class="word__title">improve <i class="icon-speaker"></i> </p>
+                                <p class="word__transcription">|ɪmˈpruːv| </p>
+                                <p class="word__translate">улучшать<br>совершенствовать</p>
+                            </div>
+                        </div>
+                        <div class="col-6 example">
+                            <div class="example__wrapper">
+                                <p class="example__head">Примеры <i class="icon-share"></i></p>
+                                <p class="example__text">He improved his German.</p>
+                                <p class="example__translate">Он продвинулся в изучении немецкого языка</p>
+                                <p class="example__text">Your work will get by, but try to improve it.</p>
+                                <p class="example__translate">Твоя работа вполне приемлема, но постарайся её улучшить</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6 example">
-                        <p class="example__head">Примеры <i class="icon-share"></i></p>
-                        <p class="example__text">He improved his German.</p>
-                        <p class="example__translate">Он продвинулся в изучении немецкого языка</p>
-                        <p class="example__text">Your work will get by, but try to improve it.</p>
-                        <p class="example__translate">Твоя работа вполне приемлема, но постарайся её улучшить</p>
+                    <div class="row justify-content-center controls">
+                        <div class="link__wrapper">
+                            <div class="link__positive"><i class="icon-check"></i><br>уже знаю</div>
+                            <div class="link__negative"><i class="icon-uncheck"></i><br>не знаю</div>
+                        </div>
+                        <div class="link__renew"><i class="icon-refresh"></i><br>знаю, но хочу повторять</div>
+                        <div class="btn">Дальше</div>
                     </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="link__wrapper">
-                        <div class="link__positive"><i class="icon-check"></i><br>уже знаю</div>
-                        <div class="link__negative"><i class="icon-uncheck"></i><br>не знаю</div>
-                    </div>
-                    <div class="link__renew"><i class="icon-refresh"></i><br>знаю, но хочу повторять</div>
-                    <div class="btn">Дальше</div>
                 </div>
             </div>
-        </div>
-        <div class="h2 headline">Перевод-слово</div>
-        <div class="listening offset-2 col-8">
-            <div class="wrapper row justify-content-center">
+            <div class="h2 headline">Перевод-слово</div>
+            <div class="listening offset-2 col-8">
+                <div class="wrapper ">
+                    <p class="listening__title"><span class="listening__title--text">улучшать</span><i class="icon-share"></i></p>
+                    <div class="list">
+                        <a class="list__item" href="#">
+                            <p class="list__text">contribute</p>
+                            <i class="icon-speaker"></i>
+                        </a>
+                        <a class="list__item" href="#">
+                            <p class="list__text">maintain</p>
+                            <i class="icon-speaker"></i>
+                        </a>
+                        <a class="list__item" href="#">
+                            <p class="list__text">improve</p>
+                            <i class="icon-speaker"></i>
+                        </a>
+                        <a class="list__item" href="#">
+                            <p class="list__text">cover</p>
+                            <i class="icon-speaker"></i>
+                        </a>
+                        <a class="btn" href="#">Пропустить</a>
+                    </div>
 
-                <p class="listening__title">улучшать<i class="icon-share"></i></p>
-                <div class="list">
-                    <div class="list__item">
-                        <p class="list__text">contribute</p>
-                        <i class="icon-speaker"></i>
-                    </div>
-                    <div class="list__item">
-                        <p class="list__text">maintain</p>
-                        <i class="icon-speaker"></i>
-                    </div>
-                    <div class="list__item">
-                        <p class="list__text">improve</p>
-                        <i class="icon-speaker"></i>
-                    </div>
-                    <div class="list__item">
-                        <p class="list__text">cover</p>
-                        <i class="icon-speaker"></i>
-                    </div>
                 </div>
-                <div class="btn">Пропустить</div>
-
-
             </div>
+            <!-- <div class="link">
+            <a href="#" class="link__goback col-2">Вернуться к<br><span>Мои слова и фразы</span></a>
+        </div> -->
         </div>
     </section>
+
+
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
