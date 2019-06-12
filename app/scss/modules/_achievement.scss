@@ -79,15 +79,16 @@
         font-size: 1rem;
         margin: 1rem 0;
         padding: 0 0 0 1rem;
-        &--select {
-            // display: flex;
-            // flex-direction: column;
-        }
     }
     &__input {
         position: absolute;
-        @include pos($t: 1.5rem, $l: 1rem);
+        @include pos($t: 2rem, $l: 1rem);
         width: 7rem;
+        position: absolute;
+        padding: 0 1rem;
+        background: transparent;
+        border: 1px solid $light;
+        color: $light;
     }
 }
 

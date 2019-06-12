@@ -1,0 +1,118 @@
+// .teaching__main {}
+// .teaching {
+//     .headline {}
+// }
+.wrapper {
+    padding: 2rem;
+    [class^="icon-"] {
+        font-size: 1.3rem;
+    }
+    background: linear-gradient(322.92deg, #223952 0%, #345374 119.14%);
+    box-shadow: 0px 4px 20px #203067;
+}
+
+.word {
+    text-align: center;
+    padding-top: 1rem;
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+    &__transcription {
+        padding-bottom: 2rem;
+    }
+    &__translate {
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.example {
+    padding-top: 1rem;
+    text-align: left;
+    line-height: 1.75rem;
+    font-size: .75rem;
+    &__head {
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: 700;
+    }
+    &__text {
+        font-style: italic;
+    }
+    &__translate {
+        padding-bottom: 2rem;
+    }
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    [class^="icon-"] {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+    .link__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+    .link__positive {
+        text-align: center;
+        padding-right: 5rem;
+    }
+    .link__negative {
+        text-align: center;
+    }
+    .link__renew {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
+
+.listening {
+    margin-bottom: 4rem;
+    &__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        &--text {
+            justify-self: center;
+        }
+        //[class^="icon-"] {}
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 1rem 2rem;
+        cursor: pointer;
+        width: 50%;
+        [class^="icon-"] {
+            font-size: 1.75rem;
+        }
+    }
+    &__text {
+        font-size: 1rem;
+        @include size(14rem, 3rem);
+        border-radius: 5px;
+        background: $blue;
+        color: $dark;
+        line-height: 3rem;
+        text-align: center;
+        margin-right: 1rem;
+    }
+}

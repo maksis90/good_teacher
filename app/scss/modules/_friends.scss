@@ -2,6 +2,7 @@
     padding-bottom: 20em;
     .slider__wrapper {
         width: 100%;
+        margin-bottom: 1.5rem;
     }
     .slider {
         display: -webkit-flex;
@@ -13,8 +14,13 @@
         margin-bottom: 2em;
         &__item {
             @include size(4.5rem);
+            width: 4.5rem !important;
             border-radius: 50%;
             background: #fff;
+            margin: 0 .17rem;
+            .img {
+                @include size(100%);
+            }
         }
     }
     .addfriend {
@@ -26,8 +32,12 @@
 
 .graph {
     height: 15rem;
-    @media (max-width: $width-lg) {
+    @media (min-width: $width-md) {
         height: 23rem;
+        padding: 0 4rem;
+    }
+    @media (min-width: $width-md) {
+        padding: 0 8rem;
     }
     background: url('../images/graph.svg') no-repeat center bottom;
     background-size: contain;
