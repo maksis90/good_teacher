@@ -65,8 +65,10 @@ body {
     font-weight: 700;
     text-align: center;
     margin: 1rem 18.5%;
-    vertical-align: center;
     background: linear-gradient(180deg, #FBAFAC -100%, #FD6F6B 65.75%);
+    @media (min-width: $width-md) {
+        @include size(20rem, 3rem);
+    }
     &__text {
         color: $light;
     }
@@ -94,4 +96,47 @@ body {
     background: -webkit-radial-gradient(center, ellipse cover, #5f7387 0%, #253f5b 98%);
     background: radial-gradient(ellipse at center, #5f7387 0%, #253f5b 98%);
     //filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5f7387', endColorstr='#253f5b', GradientType=1);
+}
+
+.form__link {
+    pointer-events: none;
+}
+
+.error {
+    border: 1px solid white;
+    position: relative;
+    top: 2rem;
+    left: 0.5rem;
+    min-width: 1.65rem !important;
+    height: 1.65rem !important;
+    overflow: hidden;
+    overflow-x: hidden;
+    background: transparent !important;
+    &:before,
+    &:after {
+        position: absolute;
+        left: 45%;
+        content: " ";
+        height: 1.5rem;
+        width: 3px;
+        background-color: red;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.validOn {
+    &:before,
+    &:after {
+        background-color: green;
+    }
+}
+
+.headline {
+    font-weight: 700;
+    margin: 5rem 0 1.5rem;
 }

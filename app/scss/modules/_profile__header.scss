@@ -46,6 +46,7 @@
         justify-content: space-around;
         align-items: flex-start;
         padding: 0 2rem 0 4rem;
+        z-index: 3;
         &__status {
             .icon-crown {
                 font-size: 1.2rem;
@@ -65,6 +66,51 @@
         &__photo {
             border-radius: 50%;
             border: 3px solid #FE7975;
+        }
+    }
+}
+
+.dropdown-toggle {
+    background: transparent;
+    &::before {
+        font-size: 0;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.dropdown-menu {
+    background: $blue;
+    font-size: 0.8rem;
+    line-height: 1.75rem;
+    min-width: 13rem;
+    box-shadow: 0px 4px 20px rgba(113, 133, 139, 0.5);
+    &__link {
+        padding: 0 .5rem 0 2rem;
+        color: $dark;
+        position: relative;
+        &::before {
+            content: '';
+            @include pos($t: 5%, $l: 1rem);
+            @include size(.45rem);
+            transform: translateY(50%);
+            background: $dark;
+            border-radius: 50%;
+        }
+        &:after {
+            content: '';
+            @include pos($b: -30%, $l: 0);
+            @include size(11rem,
+            1px);
+            background: $dark;
+            opacity: .2;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        &:active {
+            text-decoration: none;
         }
     }
 }
