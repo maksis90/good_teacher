@@ -27,7 +27,7 @@
     }
 
     &__img {
-        @include size(4em);
+        @include size(auto, 4em);
         padding-bottom: 1em;
     }
 

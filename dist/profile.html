@@ -13,7 +13,7 @@
 </head>
 
 <body>
-   
+
     <header class="header__achiev">
         <div class="cont">
             <nav class="nav">
@@ -40,22 +40,27 @@
             <form action="" class="difficulty">
                 <p class="h2">Установи ежедневную цель</p>
 
-                <div class="difficulty__item">
-                    <input type="radio" id="starter" name="select" value="starter">
-                    <label class="difficulty__text" for="starter">буду учить 3 слова в день</label>
-                </div>
-                <div class="difficulty__item">
-                    <input type="radio" id="medium" name="select" value="medium">
-                    <label class="difficulty__text" for="medium">буду учить 5 слов в день</label>
-                </div>
-                <div class="difficulty__item">
-                    <input type="radio" id="hard" name="select" value="hard">
-                    <label class="difficulty__text" for="hard">я крутой, буду учить 10 слов в день</label>
-                </div>
-                <div class="difficulty__item">
-                    <input type="radio" id="hard" name="select" value="hard">
-                    <input class="difficulty__input" type="number" id="hard" name="select" placeholder="">
-                </div>
+                <label class="difficulty__item">
+                    <input type="radio" id="starter" name="select" class="hidden">
+                    <span class="label"></span>
+                    буду учить 3 слова в день
+                </label>
+                <label class="difficulty__item">
+                    <input type="radio" id="medium" name="select" class="hidden">
+                    <span class="label"></span>
+                    буду учить 5 слов в день
+                </label>
+                <label class="difficulty__item">
+                    <input type="radio" id="hard" name="select" class="hidden">
+                    <span class="label"></span>
+                    я крутой, буду учить 10 слов в день
+                </label>
+                <label class="difficulty__item difficulty__item--select">
+                    <input type="radio" id="custom" name="select" class="hidden">
+                    <span class="label"></span>
+                        мой вариант
+                        <input class="difficulty__input" type="number" id="custom_num" name="select" placeholder="">
+                </label>
             </form>
 
             <div class="link btn">
