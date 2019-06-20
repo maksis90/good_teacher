@@ -1,30 +1,60 @@
 // .teaching__main {}
-// .teaching {
-//     .headline {}
-// }
+.teaching {
+    .headline {
+        @media (max-width: $width-sm) {
+            margin: 0 0 1rem 0;
+        }
+    }
+}
+
 .wrapper {
     padding: 2rem;
+    @media (max-width: $width-sm) {
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
     [class^="icon-"] {
         font-size: 1.3rem;
     }
     background: linear-gradient(322.92deg, #223952 0%, #345374 119.14%);
     box-shadow: 0px 4px 20px #203067;
+    .row {
+        @media (max-width: $width-sm) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 .word {
     text-align: center;
     padding-top: 1rem;
+    @media (max-width: $width-sm) {
+        padding: 0;
+    }
     &__title {
         font-size: 1.5rem;
         font-weight: 700;
         padding-bottom: 2rem;
+        @media (max-width: $width-sm) {
+            padding-bottom: .75rem;
+        }
     }
     &__transcription {
         padding-bottom: 2rem;
+        @media (max-width: $width-sm) {
+            padding-bottom: .75rem;
+        }
     }
     &__translate {
         line-height: 2rem;
         padding-bottom: 1rem;
+        @media (max-width: $width-sm) {
+            padding-bottom: .75rem;
+        }
     }
 }
 
@@ -75,6 +105,9 @@
 
 .listening {
     margin-bottom: 4rem;
+    @media (max-width: $width-sm) {
+        padding: 0;
+    }
     &__title {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -101,6 +134,10 @@
         margin: 0 0 1rem 2rem;
         cursor: pointer;
         width: 50%;
+        @media (max-width: $width-sm) {
+            width: 80%;
+            margin: 0 0 1rem 13%;
+        }
         &:hover {
             text-decoration: none;
         }
