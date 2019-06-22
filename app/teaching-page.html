@@ -20,7 +20,10 @@
     <header class="teaching__header">
         <div class="container">
             <div class="profile__header row">
-                <div class="logo__wraper col-md-3 col-3 "><img src="images/header/logo.svg" alt="logo" class="logo__img"></div>
+                <div class="logo__wraper col-md-3 col-3 ">
+                    <img src="images/header/logo.svg" alt="logo" class="logo__img">
+                    <img src="images/header/logo-dsk.svg" alt="logodsk" class="logodsk__img">
+                </div>
                 <div class="text col-6">
                     <p class="text__head">Выйди за рамки с <span class="bold">Good teacher</span></p>
                     <p class="text__main">При ежедневном выполнении плана по изучению языка на протяжении недели, мы обещаем тебе приятный бонус - один день Премиум подписки бесплатно и возможность воспользоваться всеми преимуществами нашего сервиса!</p>
@@ -53,7 +56,13 @@
                     <div class="row">
                         <div class="col-md-6 col-12 word">
                             <div class="word__wrapper col-md-6 offset-md-6 col-12">
-                                <p class="word__title">improve <i class="icon-speaker"></i> </p>
+                                <p class="word__title">improve
+                                    <i class="icon-speaker speaker">
+                                        <audio class="audio">
+                                            <source src="audio/improve.mp3" type="audio/ogg">
+                                        </audio>
+                                    </i>
+                                </p>
                                 <p class="word__transcription">|ɪmˈpruːv| </p>
                                 <p class="word__translate">улучшать<br>совершенствовать</p>
                             </div>
@@ -83,22 +92,34 @@
                 <div class="wrapper ">
                     <p class="listening__title"><span class="listening__title--text">улучшать</span><i class="icon-share"></i></p>
                     <div class="list">
-                        <a class="list__item" href="#">
+                        <div class="list__item">
                             <p class="list__text">contribute</p>
-                            <i class="icon-speaker"></i>
-                        </a>
-                        <a class="list__item" href="#">
+                            <i class="icon-speaker isspeaker">
+                                    <audio class="iaudio">
+                                        <source src="audio/contribute.mp3" type="audio/ogg">
+                                    </audio></i>
+                        </div>
+                        <div class="list__item">
                             <p class="list__text">maintain</p>
-                            <i class="icon-speaker"></i>
-                        </a>
-                        <a class="list__item" href="#">
+                            <i class="icon-speaker ispeaker">
+                                    <audio class="iaudio">
+                                        <source src="audio/maintain.mp3" type="audio/ogg">
+                                    </audio></i>
+                        </div>
+                        <div class="list__item">
                             <p class="list__text">improve</p>
-                            <i class="icon-speaker"></i>
-                        </a>
-                        <a class="list__item" href="#">
+                            <i class="icon-speaker ispeaker">
+                                    <audio class="iaudio">
+                                        <source src="audio/improve.mp3" type="audio/ogg">
+                                    </audio></i>
+                        </div>
+                        <div class="list__item">
                             <p class="list__text">cover</p>
-                            <i class="icon-speaker"></i>
-                        </a>
+                            <i class="icon-speaker ispeaker">
+                                    <audio class="iaudio">
+                                        <source src="audio/cover.mp3" type="audio/ogg">
+                                    </audio></i>
+                        </div>
                         <a class="btn" href="#">Пропустить</a>
                     </div>
 
@@ -109,6 +130,14 @@
         </div> -->
         </div>
     </section>
+    <div class="navigation">
+        <div class="cont">
+            <a href="profile.html" class="navigation__link"><i class="icon icon-profile"></i></a>
+            <a href="" class="navigation__link"><i class="icon icon-book"></i></a>
+            <a href="" class="navigation__link"><i class="icon icon-career"></i></a>
+            <a href="teaching-page.html" class="navigation__link"><i class="icon icon-start"></i></a>
+        </div>
+    </div>
 
 
     <!--build:js js/main.min.js -->

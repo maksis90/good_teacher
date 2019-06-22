@@ -59,7 +59,7 @@
                     <span class="label"></span>
                     я крутой, буду учить 10 слов в день
                 </label>
-                <label class="difficulty__item difficulty__item--select">
+                <label class="difficulty__item difficulty__item--select difficulty__item--last">
                     <input type="radio" id="custom" name="select" class="hidden">
                     <span class="label"></span>
                         мой вариант
@@ -70,11 +70,9 @@
                 </button>
             </form>
 
-
-
             <div class="h3 ">Рекомендация на сегодня</div>
             <div class="yt__wrapper">
-                <a href="" class="yt__link"></a>
+                <iframe class="yt__link" src="https://www.youtube.com/embed/0FFLFcB9xfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="link btn">
                 <a href="#" class="btn__text">Учить</a>
@@ -96,24 +94,18 @@
                 <a href="#" class="link addfriend">Добавить друзей</a>
             </div>
             <div class="h2">Успехи друзей</div>
-            <div class="graph">
-                <span class="graph__username">Я</span>
-                <span class="graph__username">Катя</span>
-                <span class="graph__username">Витя</span>
-                <span class="graph__username">Лера</span>
-                <span class="graph__username">Аня</span>
-                <span class="graph__username">Саня</span>
+            <div id="curve_chart"></div>
+        </div>
+        <div class="navigation">
+            <div class="cont">
+                <a href="profile.html" class="navigation__link"><i class="icon icon-profile"></i></a>
+                <a href="" class="navigation__link"><i class="icon icon-book"></i></a>
+                <a href="" class="navigation__link"><i class="icon icon-career"></i></a>
+                <a href="teaching-page.html" class="navigation__link"><i class="icon icon-start"></i></a>
             </div>
         </div>
-        <secton class="navigation">
-            <div class="cont">
-                <i class="icon icon-profile"></i>
-                <i class="icon icon-book"></i>
-                <i class="icon icon-career"></i>
-                <i class="icon icon-start"></i>
-            </div>
-        </secton>
     </secton>
+
     <!--build:js js/main.min.js -->
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/libs/jquery.validate.min.js"></script>

@@ -2,6 +2,13 @@
 
 (function($) {
     $(document).ready(function() {
+        //PLAY
+        $('.speaker').click(function() {
+            $('.audio').toggle(function() {
+                this.paused ? this.play() : this.pause();
+            });
+        });
+
         //PROFILE___ difficulty custom set selector
 
         $('.difficulty__item--select').click(function() {
@@ -12,18 +19,18 @@
         });
 
         //PROFILE___ input range validation
-        jQuery.validator.setDefaults({
-            debug: false,
-            success: "validOn"
-        });
-        $("#difficulty").validate({
-            rules: {
-                field: {
-                    required: true,
-                    range: [11, 21]
-                }
-            }
-        });
+        // jQuery.validator.setDefaults({
+        //     debug: true,
+        //     success: "validOn"
+        // });
+        // $("#difficulty").validate({
+        //     rules: {
+        //         field: {
+        //             required: true,
+        //             range: [1, 21]
+        //         }
+        //     }
+        // });
 
         // Code
         $('.friend__slider').slick({
@@ -34,15 +41,15 @@
             dots: false,
             autoplay: true,
             autoplaySpeed: 2000,
-            // responsive: [{
-            //         breakpoint: 768,
-            //         settings: {
-            //             arrows: false,
-            //             centerMode: true,
-            //             centerPadding: '40px',
-            //             slidesToShow: 3
-            //         }
-            //     }
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            }]
         });
     });
 })(jQuery);

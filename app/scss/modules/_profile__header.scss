@@ -11,13 +11,22 @@
     justify-content: center;
     .logo__img {
         @include size(6rem);
+        @media (max-width: $width-sm) {
+            display: none;
+        }
+    }
+    .logodsk__img {
+        @include size(6rem);
+        @media (min-width: $width-sm) {
+            display: none;
+        }
     }
 }
 
 .profile__header {
     padding: 2rem 0;
     @media (max-width: $width-sm) {
-        padding: 0 2rem 0 0;
+        padding: 0 1rem 0 0;
     }
     position: relative;
     @media (max-width: $width-sm) {
@@ -93,7 +102,7 @@
             @media (max-width: $width-sm) {
                 @include size(4rem);
                 max-width: none;
-                margin-right: 1rem;
+                margin-right: .5rem;
             }
             border-radius: 50%;
             border: 3px solid #FE7975;
